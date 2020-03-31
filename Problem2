@@ -1,0 +1,19 @@
+public class Exam {
+    public static void main(String[] args){
+        diff();
+    }
+
+    public static void diff(){
+        double yn;
+        double xn = 0;
+        double yn1 = 1;
+        double xn1 = 0;
+        for(int i = 1; i <=51; i++){
+            yn = yn1 + .01*(xn1+yn1+(xn1*yn1));
+            System.out.println("The value of f("+ xn+") is: " + yn);
+            xn1=xn;
+            yn1=yn;
+            xn= xn+.01;
+        }
+    }
+}
